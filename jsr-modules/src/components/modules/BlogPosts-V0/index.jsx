@@ -1,5 +1,5 @@
-import blogIcon from '../../../assets/icons/blog.svg'
-import StyledJSXRegistry from '../../StyledJSXRegistry';
+import blogIcon from './assets/blog.svg'
+import StyledJSXRegistry from '../../StyledJSXRegistry.jsx';
 import {
   makeFontStyle,
   makeBorderStyle,
@@ -9,9 +9,9 @@ import {
   getStyledJsx,
   getAlignmentCss,
   getRgbaColor
-} from '../../../utils/makeFieldStyles';
-import { createExcerpt } from '../../../utils/utils';
-import styles from '../../../styles/blog-posts.module.css';
+} from '../../../utils/makeFieldStyles.ts';
+import { createExcerpt } from '../../../utils/utils.js';
+import styles from './styles.module.css';
 
 function getImageSide(hasAlternatingImage, loopIndex) {
   if (!hasAlternatingImage) {
@@ -694,7 +694,7 @@ export const Component = ({
 
 export { fields } from './fields.tsx';
 export const meta = {
-  label: `Blog posts version test`,
+  label: `Blog posts`,
   host_template_types: ["BLOG_LISTING"],
   icon: blogIcon,
   categories: ["blog"]
