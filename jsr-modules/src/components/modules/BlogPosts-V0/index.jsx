@@ -694,12 +694,12 @@ export const Component = ({
 
 export { fields } from './fields.tsx';
 export const meta = {
-  label: `Blog posts`,
+  label: `PUBLIC: Blog posts`,
   host_template_types: ["BLOG_LISTING"],
   icon: blogIcon,
   categories: ["blog"]
 };
-export { default as hublData } from './module.hubl.html?raw';
+export { default as experimentalHublData } from './module.hubl.html?raw';
 
 export const defaultModuleConfig = {
   moduleName: "blog_posts",
