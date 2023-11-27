@@ -699,7 +699,7 @@ export const meta = {
   icon: blogIcon,
   categories: ["blog"]
 };
-export { default as hublData } from './module.hubl.html?raw';
+export { default as experimentalHublData } from './module.hubl.html?raw';
 
 export const defaultModuleConfig = {
   moduleName: "blog_posts",
